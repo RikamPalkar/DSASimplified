@@ -242,11 +242,10 @@ section .container {
 
 .section-title h2::after {
   content: "";
-  width: 120px;
-  height: 1px;
+  width: 270px;
+  height: 2px;
   display: inline-block;
   background: #4ceb95;
-  margin: 4px 10px;
 }
 
 .section-title p {
@@ -257,6 +256,49 @@ section .container {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# social-links
+--------------------------------------------------------------*/
+#videos .social-links {
+  display: flex;
+}
+
+#videos .social-links a {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  margin-right: 18px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+#videos .social-links a:hover {
+  background: #18d26e;
+}
+@media (max-width: 992px) {
+  #videos h1 {
+    font-size: 36px;
+  }
+  #videos h2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #videos .social-links {
+    margin-top: 15px;
+  }
+  #videos .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*--------------------------------------------------------------
